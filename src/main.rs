@@ -4,7 +4,7 @@ fn main() {
     let aulas_lancadas = 8;
     let faltas = 2;
 
-    println!("Bem Vindo ao AgendaIF");
+    println!("Bem Vindo ao Bússola IF");
     println!("Disciplina: {}", disciplina);
     println!("Sala: {}", sala);
 

@@ -1,4 +1,4 @@
-# AgendaIF
+# Bússola IF
 
 Projeto em desenvolvimento para ajudar estudantes do IFBA
 a acompanhar aulas, horários, salas e frequência.
