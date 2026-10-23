@@ -25,6 +25,19 @@ Protótipo de terminal com dados de exemplo.
 A integração com o SUAP ainda não foi implementada.
 Projeto independente, sem vínculo oficial com o IFBA.
 
+
+## Viabilidade da integração com o SUAP
+
+Testes realizados em um projeto separado confirmaram:
+
+- Autenticação OAuth e consulta de perfil.
+- Acesso ao boletim por sessão autenticada, com extração de disciplinas e faltas.
+- Leitura de locais e horários.
+- Leitura de períodos acadêmicos e avaliações.
+
+A integração ainda não foi incorporada ao Bússola IF.
+A fonte de calendário testada não informa feriados e recessos.
+
 ## Como executar
 
 Com Rust e Cargo instalados:
