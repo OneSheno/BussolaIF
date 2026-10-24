@@ -15,11 +15,23 @@ fn main() {
         faltas: 2,
     };
 
+    let disciplina2 = Disciplina {
+        nome: String::from("Matematica"),
+        sala: String::from("sala 5"),
+        aulas_lancadas: 12,
+        faltas: 3,
+    };
+
+    mostrar_disciplina(&disciplina);
+    mostrar_disciplina(&disciplina2);
+}
+fn mostrar_disciplina(disciplina: &Disciplina) {
+    println!();
+
     println!("Disciplina: {}", disciplina.nome);
-    println!("sala: {}", disciplina.sala);
+    println!("Sala: {}", disciplina.sala);
     println!("Aulas Lançadas: {}", disciplina.aulas_lancadas);
     println!("Faltas: {}", disciplina.faltas);
-
     if disciplina.faltas > disciplina.aulas_lancadas {
         println!("Erro: Faltas maiores que aulas lançadas");
     } else if disciplina.aulas_lancadas == 0 {
