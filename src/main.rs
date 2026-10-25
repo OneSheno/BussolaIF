@@ -12,7 +12,7 @@ fn main() {
         nome: String::from("Logica de Programação"),
         sala: String::from("sala 2"),
         aulas_lancadas: 0,
-        faltas: 2,
+        faltas: 0,
     };
 
     let matematica = Disciplina {
@@ -51,6 +51,11 @@ fn mostrar_disciplina(disciplina: &Disciplina) {
         println!("Presença: {}", presencas);
         match calcular_frequencias(disciplina) {
             Some(frequencia) => {
+                if frequencia < 75.0 {
+                    println!("Frequencia abaixo do limite")
+                } else {
+                    println!("Frequencia dentro do limite")
+                }
                 println!("Frequencia: {:.1}%", frequencia);
             }
             None => {
